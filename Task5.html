@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+    <style>
+        .heading{
+            text-align: center;
+        }
+        form{
+            width: 60%;
+            margin: 10px auto;
+            border: 1px solid black;
+        }
+
+        .con{
+            display: flex;
+            justify-content: space-between;
+        }
+        .con1{
+            border: 1px solid black;
+        }
+        #notthis{
+            border: none;
+        }
+        label{
+            width: 100px;
+            border: 1px solid black;
+            padding: 2px;
+        }
+        input{
+            flex: 1;
+            border: 1px solid black;
+        }
+        textarea{
+            flex: 1;
+        }
+        select{
+            border: 1px solid black;
+        }
+        .checkbox-input{
+            border: 1px solid black;
+            flex: 1;
+        }
+        h2{
+            text-align: center;
+            color: blue;
+        }
+        .button-container{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <h1 class="heading">Task 5</h1>
+    <h2>Registration Form</h2>
+    <form>
+        <div class="con">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+        </div>
+        <div class="con">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+        </div>
+        <div class="con">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="con">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <div class="con">
+            <label for="repassword">Re-enter Password:</label>
+            <input type="password" id="repassword" name="repassword" required>
+        </div>
+        <div class="con">
+            <label class="radio-label">Gender:</label>
+            <div class="radio-input">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+        </div>
+        <div class="con">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+        </div>
+        <div class="con">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+        </div>
+
+        <div class="con">
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea>
+        </div>
+
+        <div class="con">
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" required>
+        </div>
+        <div class="con">
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="india">India</option>
+                <option value="germany">Germany</option>
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+            </select>
+        </div>
+        <div class="con">
+            <label class="checkbox-label">Languages Known:</label>
+            <div class="checkbox-input">
+                <input type="checkbox" id="english" name="languages[]" value="english">
+                <label for="english">English</label>
+                <input type="checkbox" id="kannada" name="languages[]" value="kannada">
+                <label for="kannada">Kannada</label>
+                <input type="checkbox" id="hindi" name="languages[]" value="hindi">
+                <label for="hindi">Hindi</label>
+                <input type="checkbox" id="telugu" name="languages[]" value="telugu">
+                <label for="telugu">Telugu</label>
+            </div>
+        </div>
+        <div class="con1">
+            <input type="checkbox" id="declaration" name="declaration" required>
+            <label for="declaration" id="nothis">Hereby I declare all the given details are true</label>
+        </div>
+        <p style="text-align: right; border: 1px solid black">Log in to <i style="color: blue; text-decoration: underline; font-style: normal">Ethunus</i> website</p>
+        
+    </form>
+    <div class="button-container">
+        <button type="submit">Register</button>
+    </div>
+
+</div>
+</body>
+</html>

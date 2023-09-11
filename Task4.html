@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+</head>
+<body>
+<style>
+
+    .heading{
+        text-align: center;
+    }
+
+    .con{
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        margin: 10px auto;
+    }
+    button{
+        margin: 10px 0;
+    }
+</style>
+<div>
+    <h1 class="heading">Task 4</h1>
+    <form>
+        <div class="con">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+        </div>
+        <div class="con">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="con">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="con">
+            <label for="repassword">Confirm Password:</label>
+            <input type="password" id="repassword" name="repassword" required>
+        </div>
+        <div class="con">
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+        </div>
+        <div class="con">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+        </div>
+        <div class="con">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Others</option>
+            </select>
+        </div>
+        <div class="con">
+            <button type="submit">Save</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

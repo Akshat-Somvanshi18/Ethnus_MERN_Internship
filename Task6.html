@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6</title>
+</head>
+<body>
+<style>
+    h1{
+        text-align: center;
+    }
+    table{
+        border: 1px solid black;
+        border-radius: 5px;
+        background: skyblue;
+        width: 70%;
+        margin: 10px auto;
+    }
+    th, td{
+        border-radius: 10px;
+        border: 1px solid black;
+        margin: 2px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5px;
+        width: 500px;
+        margin: 10px auto;
+    }
+
+    .grid-item {
+        border: 2px solid lightgreen;
+        height: 100px;
+        width: 100px;
+    }
+    #grid1, #grid2, #grid4, #grid5, #grid8{
+        border-radius: 5px;
+    }
+    #grid3, #grid9{
+        border-radius: 20px;
+    }
+    #grid7{
+        border-radius: 50%;
+    }
+
+</style>
+<div>
+    <h1>
+        Task-6
+    </h1>
+    <div>
+        <table>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>64</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>80</td>
+            </tr>
+        </table>
+    </div>
+    <div class="grid-container">
+        <div id="grid1" class="grid-item"></div>
+        <div id="grid2" class="grid-item"></div>
+        <div id="grid3" class="grid-item"></div>
+        <div id="grid4" class="grid-item"></div>
+        <div id="grid5" class="grid-item"></div>
+        <div id="grid6" class="grid-item"></div>
+        <div id="grid7" class="grid-item"></div>
+        <div id="grid8" class="grid-item"></div>
+        <div id="grid9" class="grid-item"></div>
+    </div>
+</div>
+</body>
+</html>
